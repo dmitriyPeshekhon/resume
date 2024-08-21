@@ -20,13 +20,9 @@ body {
 
 img {
     width: 200px;
-    height: 200px;
     border-radius: 10px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.4);
     margin-right: 30px;
-}
-
-.description {
 }
 
 .description p {
@@ -53,12 +49,22 @@ img {
 
 .contacts hr {
     margin: 5px 0;
-    width: 350px;
 }
 
 .contacts p {
     font-size: 10px;
     color: grey
+}
+
+@media (max-width: 650px) {
+    .head {
+        display: block;
+        text-align: center;
+    }
+    
+    .head img {
+        margin: 0;
+    }
 }
 
 .hobbi {
@@ -97,10 +103,55 @@ img {
     color: #82878f;
 }
 
-.message {
+.form {
     padding: 20px 25px;
     border-radius: 30px;
-    background: #ffe3ec;
+    background: #dedede;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group:first-child {
+    margin-right: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-group:first-child {
+        margin-right: 0;
+    }
 }
 
 .btn {
